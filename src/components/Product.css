@@ -1,0 +1,49 @@
+.Product-title {
+  margin-bottom: 20px;
+  color: teal;
+  text-decoration: underline 2px;
+}
+.Product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Product-card {
+  width: 300px;
+  height: 600px;
+  background-color: teal;
+  border-radius: 1rem;
+  margin: 10px;
+  color: #fff;
+}
+
+.Product-card h6 {
+  font-size: 1.2rem;
+  margin: 50px 0;
+}
+
+.Product-card img {
+  width: 250px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.Product-card button {
+  margin-top: 20px;
+  padding: 0.8rem 2.5rem;
+  background-color: #fff;
+  border: 1px solid teal;
+  color: teal;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.Product-card button:hover {
+  padding: 0.8rem 3rem;
+  transition: 0.5s ease;
+  border: 1px solid white;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}

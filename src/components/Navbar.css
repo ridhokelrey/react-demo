@@ -1,0 +1,41 @@
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: teal;
+  width: 100%;
+  height: 60px;
+  color: white;
+}
+
+.Navbar-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.Navbar-navlink {
+  display: flex;
+}
+
+.Navbar-navlink li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.Navbar-navlink a {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar-search input {
+  width: 5rem;
+}
+
+.Navbar-search button {
+  background-color: white;
+  color: teal;
+  border: none;
+  padding: 1.5px;
+  margin-left: 2px;
+}
