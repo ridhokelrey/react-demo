@@ -3,19 +3,22 @@
   justify-content: space-around;
   align-items: center;
   background-color: teal;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   color: white;
 }
 
 .Navbar-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: bolder;
+  width: 10%;
 }
 
 .Navbar-navlink {
   display: flex;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .Navbar-navlink li {
@@ -26,16 +29,57 @@
 .Navbar-navlink a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
 }
 
-.Navbar-search input {
-  width: 5rem;
+.Navbar-burger {
+  font-size: 25px;
+  display: none;
 }
 
-.Navbar-search button {
+.Navbar-burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
   background-color: white;
-  color: teal;
-  border: none;
-  padding: 1.5px;
-  margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .Navbar-navlink {
+    position: absolute;
+    right: 0;
+    height: 40%;
+    width: 100%;
+    color: black;
+    top: 5.5vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .Navbar-burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
