@@ -13,7 +13,7 @@ export default function Product() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
 
-  // console.log(data.data);
+  console.log(data.data);
 
   return (
     <div className="Product">
